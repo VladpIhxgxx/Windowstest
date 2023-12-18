@@ -20,15 +20,3 @@ jobs:
 
       - name: Time Counter
         run: Start-Sleep -Seconds 14400
-
-while True:
-    try:
-        response = requests.get('https://your-project-url-here.com')
-        if response.status_code == 200:
-            print('Проект работает нормально!')
-        else:
-            print('Проект недоступен. Ошибка:', response.status_code)
-    except Exception as e:
-        print('Произошла ошибка:', e)
-
-    time.sleep 300
